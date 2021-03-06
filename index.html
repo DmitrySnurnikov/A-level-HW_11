@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- hw1 -->
+<script>
+    var h=['Привет,', 'мир','!'];
+    var a=(h[0]+h[1]+h[2]);
+    console.log(a);
+    </script>
+    <!-- Task 2 -->
+    <script>
+        var a="ru";
+        var b="en";
+        var c="en";
+        var d = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+        var f = ["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"];
+        if (c==a){
+            console.log(f);
+        }
+        else if (c==b){
+            console.log(d);
+        }
+        else{
+            console.log("Не правильно введены данные");
+        }
+        switch(c){
+            case a:
+                console.log(f);
+            break;
+        case b:
+            console.log(d);
+            break;
+        default:
+            console.log("Не правильно введены данные");
+        }
+
+        var arr = {
+        'ru':['пн', 'вт', 'ср','чт', 'пт', 'сб', 'вс'],
+        'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
+        };
+        console.log(arr[c]);
+    </script>
+</body>
+</html>
