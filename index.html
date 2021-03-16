@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- hw1 -->
+<script>
+    var h=['Привет,', 'мир','!'];
+    var a=(h[0]+h[1]+h[2]);
+    console.log(a);
+    </script>
+    <!-- Task 2 -->
+    <script>
+        var langugesRU="ru";
+        var langugesEN="en";
+        var langugesVar="en";
+        var weeksEN = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+        var weeksRU = ["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"];
+        if (langugesVar==langugesRU){
+            console.log(weeksRU);
+        }
+        else if (langugesVar==langugesEN){
+            console.log(weeksEN);
+        }
+        else{
+            console.log("Не правильно введены данные");
+        }
+        
+        switch(langugesVar){
+            case langugesRU:
+                console.log(weeksRU);
+            break;
+        case langugesEN:
+            console.log(weeksEN);
+            break;
+        default:
+            console.log("Не правильно введены данные");
+        }
+
+        var arr = {
+        'ru':['пн', 'вт', 'ср','чт', 'пт', 'сб', 'вс'],
+        'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
+        };
+        console.log(arr[langugesVar]);
+    </script>
+    <!-- Task 3 -->
+   <script>
+         // Подьезд
+    var porch=window.prompt('Введите кол-во подьездов');
+    if(porch>10  || !/^[0-9]+$/.test(porch)){
+        alert("Значения введены не правильно. Кол-во подьездов от 1 до 10");
+    }
+
+    // Этаж
+    var story=window.prompt('Введите кол-во этажов'); 
+    if(story>25 || !/^[0-9]+$/.test(story)){
+        alert("Значения введены не правильно. Кол-во этажов от 1 до 25")
+    }
+    // Квартира
+    var flat=window.prompt('Введите кол-во квартир'); 
+    if(flat>20 || !/^[0-9]+$/.test(flat)){
+        alert("Значения введены не правильно. Кол-во квартир от 1 до 20")
+    }
+    // Номер квартиры
+    var number=window.prompt('Введите номер квартиры'); 
+    if(number>flats || !/^[0-9]+$/.test(number)){
+        alert("Значения введены не правильно. Номер квартиры привышает количество квартир в доме")
+    }
+    while (porch>10 || !/^[0-9]+$/.test(porch)  && story>25  || !/^[0-9]+$/.test(story) && flat>20 || !/^[0-9]+$/.test(flat)  && number>flats || !/^[0-9]+$/.test(number)) {
+        close;
+    }   
+    var flats=porch*story*flat;
+    var m=story*flat;
+    // подьезд
+    var h=number/(m);
+    var e = Math.ceil(h);
+    // этаж
+    var x = (m*e)-number;
+    var i = Math.floor(x/t);
+    var l = story-i;
+    alert("Квартира с номером " + number + " находится в подъезде № " + e + " на " + l + " этаже");
+   </script>
+    
+</body>
+</html>
